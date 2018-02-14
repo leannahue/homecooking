@@ -1,0 +1,72 @@
+body {
+
+}
+
+/*.top-header {
+	color: #2a3484;
+}*/
+
+.container {
+	/*margin-left: 0px;
+	margin-right: 0px;*/
+}
+
+.top-header h1{
+	/*font-size: 50px;
+	font-weight: 700;*/
+	text-align: center;
+}
+
+.material-icons {
+	/*height: 100%;*/
+	padding-top: 20px;
+	width: 100%;
+}
+
+.back-icon {
+	float: left;
+}
+
+.home-icon {
+	float: right;
+}
+
+.line-top {
+	border: 1px solid #2a3484;
+}
+
+#search-bar {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#search-bar h3{
+	/*float: left;*/
+}
+
+.search-icon {
+	float: right;
+}
+
+.search-line {
+	border: 1px solid black;
+	width: 90%;
+	margin-top: 7%;
+}
+
+.drop-down {
+	border: 1px solid black;
+	padding: 5px;
+	padding-left: 0px;
+}
+
+.drop-down h4{
+	float: left;
+}
+
+.arrow-down {
+	width: 25%;
+	/*margin-bottom: 10px;*/
+}
+
+
