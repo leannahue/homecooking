@@ -14,7 +14,8 @@ body {
 .top-header h1{
 	/*font-size: 50px;
 	font-weight: 700;*/
-	text-align: center;
+	float: left;
+	padding-left: 45%;
 }
 
 .material-icons {
@@ -28,7 +29,14 @@ body {
 }
 
 .home-icon {
-	float: right;
+	padding-left: 1070px;
+}
+
+.header-icon{
+	width: 50px;
+	height: 0px;
+	float: left;
+	margin-top: 2%;
 }
 
 .line-top {
