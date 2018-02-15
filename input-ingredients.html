@@ -12,23 +12,22 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.css">
 
-	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 </header>
 <body>
 	<div class="container">
 		<div class="row top-header">
 			<div class="col-md-2 header-icon">
-				<a href="index.html">
-					<i class="material-icons back-icon">keyboard_backspace</i>
-				</a>
-			</div>
-			<div class="col-md-8">
-				<h1>Add Ingredients</h1>
+				<a href="index.html"><i class="material-icons back-icon">keyboard_backspace</i></a>
 			</div>
 			<div class="col-md-2 header-icon">
 				<a href="index.html"><i class="material-icons home-icon">home</i></a>
+			</div>
+			<div class="col-md-8">
+				<h1>Add Ingredients</h1>
 			</div>
 		</div>
 		<div class="line-top">
@@ -51,7 +50,11 @@
 						<h4>Vegetables</h4>
 					</div>
 					<div class="col-md-1">
-						<i class="material-icons arrow-down">keyboard_arrow_down</i>
+						<select class="droplist" id="droplistveg" onchange="additemveg()">
+							<option> Select</option>
+							<option>Lettuce</option>
+							<option>Colliflower</option>
+						</select>
 					</div>
 				</div>
 				<div class="row drop-down">
@@ -59,7 +62,11 @@
 						<h4>Meats</h4>
 					</div>
 					<div class="col-md-1">
-						<i class="material-icons arrow-down">keyboard_arrow_down</i>
+						<select class="droplist" id="droplistmeats" onchange="additemmeats()">
+							<option> Select</option>
+							<option>Beef</option>
+							<option>Steak</option>
+						</select>
 					</div>
 				</div>
 				<div class="row drop-down">
@@ -67,7 +74,11 @@
 						<h4>Dairy</h4>
 					</div>
 					<div class="col-md-1">
-						<i class="material-icons arrow-down">keyboard_arrow_down</i>
+						<select class="droplist" id="droplistdairy" onchange="additemdairy()">
+							<option> Select</option>
+							<option>Yogurt</option>
+							<option>Cheese</option>
+						</select>
 					</div>
 				</div>
 				<div class="row drop-down">
@@ -75,17 +86,28 @@
 						<h4>Fruits</h4>
 					</div>
 					<div class="col-md-1">
-						<i class="material-icons arrow-down">keyboard_arrow_down</i>
+						<select class="droplist" id="droplistfruits" onchange="additemfruits()">
+							<option> Select</option>
+							<option>Mango</option>
+							<option>Orange</option>
+						</select>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 selected-ingredients">
 				<h2>Selected Ingredients:</h2>
 			</div>
+			<div class="col-md-4">
+				<div id="ingredientlist"> </div>
+				<ul>
+					
+				</ul>
+			</div>
 		</div>
-
-	</div>
-	
+<a href="recomended-recipes.html">
+<div class="wrapper">
+<div class="nexttext"> I'm finished. Give me my recomended recipes.</div></div></a> 
+<script src="script.js"></script>
 </body>
 
 </html>

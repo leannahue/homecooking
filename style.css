@@ -1,5 +1,10 @@
 body {
-
+background-image: url(http://peachesfresh.com.au/wp-content/uploads/2016/05/Web_Background_May8.jpg);
+	background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /*.top-header {
@@ -9,34 +14,42 @@ body {
 .container {
 	/*margin-left: 0px;
 	margin-right: 0px;*/
+	margin-top: 1%;
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .top-header h1{
 	/*font-size: 50px;
 	font-weight: 700;*/
 	float: left;
-	padding-left: 45%;
+	padding-left: 17%;
+	font-size: 500%;
 }
 
 .material-icons {
 	/*height: 100%;*/
-	padding-top: 20px;
 	width: 100%;
 }
 
 .back-icon {
-	float: left;
+	font-size: 700%;
+	padding-top: 100%;
 }
 
 .home-icon {
-	/*padding-left: 1070px;*/
+	padding-left: 4300%;
+	font-size: 700%;
+	padding-top: 60%;
+	
 }
 
 .header-icon{
 	width: 50px;
 	height: 0px;
 	float: left;
-	margin-top: 2%;
 }
 
 .line-top {
@@ -54,12 +67,17 @@ body {
 
 .search-icon {
 	float: right;
+	padding-top: 30%;
 }
 
 .search-line {
 	border: 1px solid black;
 	width: 90%;
 	margin-top: 7%;
+}
+
+.select-ingredients h2{
+font-size: 300%;
 }
 
 .drop-down {
@@ -70,9 +88,46 @@ body {
 
 .drop-down h4{
 	float: left;
+	font-size: 190%;
+}
+
+.droplist{
+	position: relative;
+	right: 210%;
+	margin-top: 30%;
 }
 
 .arrow-down {
 	width: 25%;
 	/*margin-bottom: 10px;*/
 }
+
+#ingredientlist{
+	font-size: 130%;
+}
+
+.nextpage{
+	float: right;
+
+
+}
+
+.nexttext{
+	padding-top: 2%;
+	font-size: 120%;
+
+}
+
+.forward-icon{
+	font-size: 500%;
+	
+}
+
+.wrapper{
+	margin-top: 1%;
+	border: 1px solid black;
+	padding: 1%;
+	float: right;
+	margin-bottom: 1%;
+}
+
