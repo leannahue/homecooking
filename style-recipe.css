@@ -1,0 +1,36 @@
+body {
+
+}
+
+.top-header h1{
+	/*font-size: 50px;
+	font-weight: 700;*/
+	float: left;
+	padding-left: 45%;
+}
+
+.material-icons {
+	/*height: 100%;*/
+	padding-top: 20px;
+	width: 100%;
+}
+
+.back-icon {
+	float: left;
+}
+
+.header-icon{
+	width: 50px;
+	height: 0px;
+	float: left;
+	margin-top: 2%;
+}
+
+.line-top {
+	border: 1px solid #2a3484;
+}
+
+.food-picture {
+	margin-top: 5%;
+	width: 95%;
+}
