@@ -4,16 +4,19 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
 }
 
-.container {
-	background-color: white;
-	margin-top: 5%;
+.container{
+	background-color:white;
+	border-radius:10px;
+	margin-top:1%;
+	margin-bottom:1%;
 }
 
 .top-header h1{
-	/*font-size: 50px;
-	font-weight: 700;*/
+	font-size: 500%;
+	/*font-weight: 700;*/
 	float: left;
 	padding-left: 45%;
 }
@@ -25,15 +28,19 @@ body {
 }
 
 .back-icon {
+	/*margin-top: 2%;*/
 	float: left;
+	font-size: 100px;
 }
 
-.header-icon{
+.home-icon{
 	width: 50px;
 	height: 0px;
-	float: left;
-	margin-top: 2%;
+	float: right;
+	/*margin-top: 2%;*/
+	font-size: 100px;
 }
+
 
 .line-top {
 	border: 1px solid #2a3484;
@@ -41,5 +48,29 @@ body {
 
 .food-picture {
 	margin-top: 5%;
-	width: 95%;
+	width: 110%;
+	margin-right: 5%;
+}
+
+.col-md-6{
+	float:left;
+}
+
+.row{
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+.section-title{
+	color:crimson;
+	margin-left:1%;
+}
+
+.finished-icon{
+	border: 1px solid black;
+	float:right;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom:2%;
+	margin-right:5%;
 }
