@@ -33,11 +33,15 @@
 		<div class="line-top">
 		</div>
 		<div class="row" id="search-bar">
-			<div class="col-md-10">
-				<h3>Search for an ingredient</h3>
+			<div class="col-md-1 search-icon">
+				<i class="material-icons ">search</i>
+			</div>
+			<div class="col-md-9">
+				<input type="text" id="ingredient-input" onkeyup="typeingredient()" placeholder="Add an ingredient">
+				<!-- <h3>Search for an ingredient</h3> -->
 			</div>
 			<div class="col-md-2">
-				<i class="material-icons search-icon">search</i>
+				<button class="add-ingredient" onclick="addsearchitem()">Add Ingredient</button>
 			</div>
 			<div class="search-line">
 			</div>
@@ -54,6 +58,15 @@
 							<option> Select</option>
 							<option>Lettuce</option>
 							<option>Cauliflower</option>
+							<option>Carrot</option>
+							<option>Tomato</option>
+							<option>Spinach</option>
+							<option>Broccoli</option>
+							<option>Potato</option>
+							<option>Onion</option>
+							<option>Cabbage</option>
+							<option>Peas</option>
+							<option>Cucumber</option>
 						</select>
 					</div>
 				</div>
@@ -66,6 +79,15 @@
 							<option> Select</option>
 							<option>Beef</option>
 							<option>Steak</option>
+							<option>Pork</option>
+							<option>Lamb</option>
+							<option>Chicken</option>
+							<option>Bacon</option>
+							<option>Sausage</option>
+							<option>Ham</option>
+							<option>Prosciutto</option>
+							<option>Salami</option>
+							<option>Duck</option>
 						</select>
 					</div>
 				</div>
@@ -77,7 +99,16 @@
 						<select class="droplist" id="droplistdairy" onchange="additemdairy()">
 							<option> Select</option>
 							<option>Yogurt</option>
-							<option>Cheese</option>
+							<option>Cream</option>
+							<option>Milk</option>
+							<option>Sour Cream</option>
+							<option>Feta</option>
+							<option>Cheddar Cheese</option>
+							<option>Condensed Milk</option>
+							<option>Whipped Cream</option>
+							<option>Mozzarella</option>
+							<option>Ricotta</option>
+							<option>Ice Cream</option>
 						</select>
 					</div>
 				</div>
@@ -90,6 +121,15 @@
 							<option> Select</option>
 							<option>Mango</option>
 							<option>Orange</option>
+							<option>Strawberry</option>
+							<option>Raspberry</option>
+							<option>Grapes</option>
+							<option>Oranges</option>
+							<option>Bananas</option>
+							<option>Blueberry</option>
+							<option>Jackfruit</option>
+							<option>Apple</option>
+							<option>Peach</option>
 						</select>
 					</div>
 				</div>

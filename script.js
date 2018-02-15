@@ -64,3 +64,11 @@ function additemfruits() {
 	console.log(nameList);
 
 }
+
+function addsearchitem() {
+	input = document.getElementById("ingredient-input");
+	input = input.value.substr(0,1).toUpperCase() + input.value.substr(1).toLowerCase();
+	input = "<li>" + input + "</li>";
+	document.getElementById("ingredientlist").innerHTML += input;
+
+}
