@@ -1,0 +1,94 @@
+<html>
+<header>
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- To ensure mobile functionality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="track-savings.css" />
+  <script src="track-savings.js"></script>
+</header>
+
+<body>
+
+  <div class="container">
+
+    <div class="row top-header">
+      <div class="col-md-2 header-icon">
+        <a href="index.html">
+          <i class="material-icons back-icon">keyboard_backspace</i>
+        </a>
+      </div>
+      <div class="col-md-8 tracking-savings-header">
+        <h1>Track Savings</h1>
+      </div>
+      <div class="col-md-2 headers-icon">
+        <a href="index.html"><i class="material-icons home-icon">home</i></a>
+      </div>
+    </div>
+      <div class="line-top">
+      </div>
+
+      <div id="progressshiz" class="progress" style="visibility: hidden">
+        <div id="dawae" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> <span class="progress-bar-text"> <span id="goalnames"></span> <span id="goalpercentage"> 0 </span>% </span></div>
+      </div>
+      <p class="progress-text">$128.67 saved <span id="goalmoneys"> </span> </p>
+
+      <span class="track-savings-text"> Cost of eating out: $100.00 </span>
+      <p class="track-savings-text"> Cost of cooking: &nbsp &nbsp&nbsp $40.00 </p>
+      <div class="line-divider">
+      </div>
+      <p class="track-savings-text"> Total saved:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $60.00 </p>
+
+
+
+
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+        Set a goal!
+      </button>
+      <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3> Enter in <span id="bold-one"> one </span> of the following! </h3>
+              <button type="button" class="btn btn-default" data-dismiss="modal"> x </button>
+            </div>
+            <div class="modal-body">
+              <div>
+                  <div>
+                    <label for="monetary_input"> <span id="modal-text">Set a general monetary goal </span> </label>
+                    <input type="text" id="monetary_input" name="Monetary" placeholder="Monetary goal">
+
+                    <h2 id="big-or"> OR </h2>
+
+                    <label for="wishlist_input"><span id="modal-text"> Save up for your specific wishlist item </span></label>
+                    <input type="text" id="wishlist_input" name="Wishlist" placeholder="Wishlist goal">
+
+                    <input id="modal-submit" type="submit" value="Submit">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+</body>
+</html>

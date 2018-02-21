@@ -1,0 +1,141 @@
+
+body {
+	background-image: url(http://peachesfresh.com.au/wp-content/uploads/2016/05/Web_Background_May8.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	font-family: 'Work Sans', sans-serif;
+}
+
+/*.top-header {
+	color: #2a3484;
+}*/
+
+.header-icon{
+	width: 50px;
+	height: 0px;
+	float: left;
+}
+
+.home-icon {
+	font-size: 800%;
+  margin-left: 15%;
+	padding-top: 60%;
+}
+
+.line-top {
+	border: 1px solid #2a3484;
+	margin-bottom: 3%;
+}
+
+.line-divider {
+	border: 1px solid #2a3484;
+	margin-bottom: 1%;
+	width: 29%;
+	margin-left: 12%;
+}
+
+
+
+.back-icon {
+	font-size: 700%;
+	padding-top: 100%;
+}
+
+.container {
+	/*margin-left: 0px;
+	margin-right: 0px;*/
+	background-color: white;
+	border-radius: 1%;
+	padding: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.top-header h1{
+	/*font-size: 50px;
+	font-weight: 700;*/
+	float: left;
+	padding-left: 12%;
+}
+
+.material-icons {
+	/*height: 100%;*/
+	padding-top: 20px;
+	width: 100%;
+}
+
+.progress div {
+	height: 5%;
+}
+.progress-bar {
+
+}
+
+.progress-bar-text {
+	font-weight: bold;
+	font-size: 175%;
+}
+#dawae {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.progress-text {
+	font-weight: bold;
+	font-size: 125%;
+	padding-bottom: 5%;
+}
+
+
+.track-savings-text {
+	font-weight:bold;
+	font-size: 175%;
+	margin-left: 12%;
+}
+
+.tracking-savings-header h1 {
+	font-size: 500%;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+#big-or {
+	text-align: center;
+}
+
+#bold-one {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#modal-text {
+	font-size: 150%;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+}
