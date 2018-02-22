@@ -30,3 +30,10 @@ $(document).ready(function() {
   })
 
 })
+
+
+function showdropdown() {
+    document.getElementById("mydropdown").classList.toggle("show");
+}
+
+
