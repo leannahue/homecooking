@@ -31,9 +31,19 @@ $(document).ready(function() {
 
 })
 
+var uparrow = false;
 
 function showdropdown() {
     document.getElementById("mydropdown").classList.toggle("show");
+    if (uparrow) {
+      uparrow= false;
+      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_down" ;
+    }
+    else{
+      uparrow = true;
+      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_up" ;
+    }
+
 }
 
 
