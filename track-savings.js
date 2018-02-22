@@ -4,12 +4,15 @@ $(document).ready(function() {
   var goalname = '';
   var goalmoney = 0;
 
+
   $('#modal-submit').click(function() {
     goalmoney = $('#monetary_input').val();
     goalname = $('#wishlist_input').val();
     if(!goalname) {
-      goalname = "Monetary: ";
+      goalname = "Monetary";
     }
+
+
     if(!goalmoney && goalname) {
       var preset = FUCK[goalname];
       if(preset) {
@@ -18,32 +21,24 @@ $(document).ready(function() {
     }
     console.log('goalmoney is: ' + goalmoney);
     $('#mymodal').modal('hide');
-    $('#progressshiz').css({visibility: "visible"})
+    // $('#progressshiz').css({visibility: "visible", position: "relative"});
     $('#goalnames').html(goalname + ": ");
-    $('#goalmoneys').html("of $" + goalmoney);
+    $('#goalmoneys').html("your goal for $" + goalmoney);
     var prc = Math.round(128.67 * 100 / goalmoney);
     if(prc > 100) {
       prc = 100;
     }
-    $('#goalpercentage').html(prc);
+    $('#goalpercentage').html(prc + "%");
     $('#dawae').css({width: prc + "%"})
+
+    if(goalmoney === 0) {
+      $('#button-label').html("Set a goal!")
+    } else {
+      console.log(goalmoney);
+      $('#button-label').html("Edit goal!")
+    }
+
   })
 
+
 })
-
-var uparrow = false;
-
-function showdropdown() {
-    document.getElementById("mydropdown").classList.toggle("show");
-    if (uparrow) {
-      uparrow= false;
-      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_down" ;
-    }
-    else{
-      uparrow = true;
-      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_up" ;
-    }
-
-}
-
-

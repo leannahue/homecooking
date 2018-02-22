@@ -21,8 +21,6 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="track-savings.css" />
   <script src="track-savings.js"></script>
-
-
 </header>
 
 <body>
@@ -45,23 +43,20 @@
       <div class="line-top">
       </div>
 
-      <div id="progressshiz" class="progress" style="visibility: hidden">
-        <div id="dawae" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> <span class="progress-bar-text"> <span id="goalnames"></span> <span id="goalpercentage"> 0 </span>% </span></div>
+      <div id="progressshiz" class="progress">
+        <div id="dawae" class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+           <span class="progress-bar-text">
+             <span id="goalnames"></span>
+             <span id="goalpercentage"> You haven't set a goal for your savings yet!</span>
+           </span>
+         </div>
       </div>
-      <p class="progress-text">$128.67 saved <span id="goalmoneys"> </span> </p>
 
-      <span class="track-savings-text"> Cost of eating out: $100.00 </span>
-      <p class="track-savings-text"> Cost of cooking: &nbsp &nbsp&nbsp $40.00 </p>
-      <div class="line-divider">
-      </div>
-      <p class="track-savings-text"> Total saved:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $60.00 </p>
+      <div id="boxy">
+      <p class="progress-text">$128.67 saved in total <span id="goalmoneys"> </span> </p>
 
-
-
-
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
-        Set a goal!
+      <button id="button-id" type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+        <span id="button-label"> Set a goal! </span>
       </button>
       <div class="modal fade" id="mymodal">
         <div class="modal-dialog">
@@ -89,41 +84,15 @@
         </div>
       </div>
 
-      <div>
-      <p class="dropbtn" onclick="showdropdown()">
-          More details
-        <i class="material-icons" id="dropdownbtn">keyboard_arrow_down</i>
-      </p>
-        <div id="mydropdown" class="dropdowncontent">
-          <div class="container2 vertical rounded">
-            <h2>Savings</h2>
-            <div class="Y-axis">Money Saved</div>
-            <div class="progress-bar-september">
-              <span>$10</span>
-            </div>
-            <div class="progress-bar-october">
-              <span>$30</span>
-            </div>
-            <div class="progress-bar-november">
-             <span>$50</span>
-           </div>
-           <div class="progress-bar-december">
-            <span>$30</span>
-          </div>
-          <div class="progress-bar-january">
-            <span>$40</span>
-          </div>
-          <div class="september">September</div>
-          <div class="october">October</div>
-          <div class="november">November</div>
-          <div class="december">December</div>
-          <div class="january">January</div>
-          <div class="x-axis">Month</div>
-        </div>
-      </div>
     </div>
 
-  
+      <p class="stats-for-last-meal-text"> Stats for your last meal: </p>
+      <p class="track-savings-text"> Cost of eating out: $18.25 </p>
+      <p class="track-savings-text"> Cost of cooking: &nbsp;&nbsp;&nbsp;&nbsp; $6.50 </p>
+      <div class="line-divider">
+      </div>
+      <p class="track-savings-text"> Total saved:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $11.75 </p>
+
 
 
   </div>
