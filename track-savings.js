@@ -1,4 +1,4 @@
-var FUCK = {Bike: 400, car: 800};
+var FUCK = {Bike: 400, Car: 800};
 
 $(document).ready(function() {
   var goalname = '';
@@ -7,7 +7,8 @@ $(document).ready(function() {
 
   $('#modal-submit').click(function() {
     goalmoney = $('#monetary_input').val();
-    goalname = $('#wishlist_input').val();
+    goalname =  $('#wishlist_input').val();
+    goalname= goalname.substr(0,1).toUpperCase() + goalname.substr(1).toLowerCase();
     if(!goalname) {
       goalname = "Monetary";
     }
@@ -42,3 +43,20 @@ $(document).ready(function() {
 
 
 })
+
+
+var uparrow = false;
+
+function showdropdown() {
+    document.getElementById("mydropdown").classList.toggle("show");
+    if (uparrow) {
+      uparrow= false;
+      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_down" ;
+    }
+    else{
+      uparrow = true;
+      document.getElementById("dropdownbtn").innerHTML= "keyboard_arrow_up" ;
+    }
+
+}
+
