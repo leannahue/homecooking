@@ -10,8 +10,8 @@ var recipe_names = [];
 // displayIngredients();
 
 var bigassarray = [];
-var F2Fkey = "a424e4c0845023455bc2060bf36593a7";
-// var F2Fkey = "1bb35aab149d54449a70218d016a6d28";
+// var F2Fkey = "a424e4c0845023455bc2060bf36593a7";
+var F2Fkey = "1bb35aab149d54449a70218d016a6d28";
 
 // console.log("Entered function!")
 $.ajax({
@@ -44,6 +44,7 @@ $.ajax({
         success: function(recipe) {
           console.log('Success in finding one recipe!');
           bigassarray.push(recipe);
+          // bigassarray = bigassarray.concat(recipe);
         },
         error: function(error) {
           console.log(error);
@@ -56,10 +57,10 @@ $.ajax({
   }
 }).done(() => {
   console.log(bigassarray);
+  console.log(bigassarray.length);
+  for (var i = 0; i < 30; i++) {
+    console.log("hello");
+    console.log(bigassarray.i);
+    // recipe_names = recipe_names.concat(bigassarray[i]["recipe"]["title"]);
+  }
 })
-// console.log(bigassarray[0]["recipe"]["title"]);
-for (var i = 0; i < bigassarray.length; i++) {
-  console.log("hello");
-  console.log(bigassarray[i]["recipe"]["title"]);
-  recipe_names = recipe_names.concat(bigassarray[i]["recipe"]["title"]);
-}
