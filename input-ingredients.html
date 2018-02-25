@@ -1,16 +1,19 @@
 <html>
 <header>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- To ensure mobile functionality -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+  <!-- To ensure mobile functionality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -37,7 +40,7 @@
 				<i class="material-icons ">search</i>
 			</div>
 			<div class="col-md-9">
-				<input type="text" id="ingredient-input" onkeyup="typeingredient()" placeholder="Add an ingredient">
+				<input type="text" spellcheck="true" id="ingredient-input" onkeyup="enterReturn(event)" placeholder="Add an ingredient">
 				<!-- <h3>Search for an ingredient</h3> -->
 			</div>
 			<div class="col-md-2">
@@ -140,13 +143,15 @@
 			<div class="col-md-4">
 				<div id="ingredientlist"> </div>
 				<ul>
-					
+
 				</ul>
 			</div>
 		</div>
 <a href="recommended-recipes.html">
-<div class="wrapper">
-<div class="nexttext"> I'm finished. Give me my recommended recipes.</div></div></a> 
+	<button onclick="nextPage()" class="wrapper">
+		I'm finished. Give me my recommended recipes.
+	</button>
+</a>
 <script src="script.js"></script>
 </body>
 

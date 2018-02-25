@@ -43,7 +43,7 @@ body {
 	padding-left: 4300%;
 	font-size: 700%;
 	padding-top: 60%;
-	
+
 }
 
 .header-icon{
@@ -94,6 +94,11 @@ body {
 	width: 150%;
 	margin-top: 15%;
 	margin-left: 30%;
+	border-radius: 5px;
+	/* background-color: rgb(216, 216, 216);
+	border-color: rgb(186, 186, 186); */
+	background-color: rgb(2, 117, 216);
+	color: white;
 }
 
 .search-line {
@@ -134,29 +139,19 @@ body {
 	font-size: 130%;
 }
 
-.nextpage{
-	float: right;
-
-
-}
-
-.nexttext{
-	padding-top: 2%;
-	font-size: 120%;
-
-}
-
 .forward-icon{
 	font-size: 500%;
-	
 }
 
 .wrapper{
 	margin-top: 1%;
-	border: 1px solid black;
 	padding: 0.5%;
-	padding-top: 0px;
 	float: right;
 	margin-bottom: 1%;
+	border-radius: 5px;
+	font-size: 120%;
+	/* background-color: rgb(216, 216, 216);
+	border-color: rgb(186, 186, 186); */
+	background-color: rgb(2, 117, 216);
+	color: white;
 }
-
