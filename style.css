@@ -255,14 +255,16 @@ body {
 	padding-right: 5%;
 }
 
-/*.top-header h1{*/
-	/*font-size: 50px;
-	font-weight: 700;*/
-	/*float: left;
-	padding-left: 17%;
+.top-header h1{
+	/*font-size: 50px;*/
+	/*font-weight: 700;*/
+	float: left;
+	padding-left: 40%;
 	font-size: 500%;
+	text-align: center;
+	font-weight: bold;
 }
-*/
+
 
 .row {
 	padding-top:2%;
@@ -292,6 +294,7 @@ body {
 
 .line-top {
 	border: 1px solid #2a3484;
+	margin-top:20%;
 }
 
 #search-bar {
