@@ -1,24 +1,89 @@
 <html>
-<header>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- To ensure mobile functionality -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
-
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-</header>
+<title>Home Cooking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style-homepage.css">
 <body>
-	<a href="input-ingredients.html"><h3>Cook with What You Have</h3></a>
-	<div>
-		<a href="track-savings.html"><h3>Track Savings</h3></a>
-	</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#meal-plan" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+      <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
+      <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
+      <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="homepage-pic.jpg" alt="Architecture" width="1500" height="400">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"></span> <span class="w3-hide-small w3-text-light-grey">Home Cooking</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+ <!--  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div> -->
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+
+        <div class="w3-display-topleft w3-black w3-padding">Weekly Meal Plan</div>
+        <br>
+        <p class="blurb">View and create your weekly meal plan, and see your grocery list with the ingredients to buy for the week. </p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href = "input-ingredients.html"><div class="w3-display-topleft w3-black w3-padding">Cook With What You Have</div>
+        </a>
+        <br>
+        <p class="blurb">Input the ingredients you have in your fridge and pantry, and we'll recommend a couple easy meals you can cook without making a separate trip to the grocery store.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href = "track-savings.html"><div class="w3-display-topleft w3-black w3-padding">Track Savings</div>
+        </a>
+        <br>
+        <p class="blurb">See how much money you've saved from cooking versus eating out at restaurants, and track how much progress you've made toward your savings goal.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Browse Recipes</div>
+        <br>
+        <p class="blurb"> Search through recipes based on filters of your choosing.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+</footer>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
 </html>

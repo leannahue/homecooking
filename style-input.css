@@ -158,15 +158,13 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-.container{
-	background-color:white;
-	border-radius:10px;
-	margin-top: 1%;
-	margin-bottom:1%;
-	/* margin-left: 16%; */
-	font-size: 80%;
-	font-weight: bold;
-	/* width: 80%; */
+/*.top-header {
+	color: #2a3484;
+}*/
+
+.container {
+	/*margin-left: 0px;
+	margin-right: 0px;*/
 	margin-top: 5%;
 	background-color: white;
 	border-radius: 10px;
@@ -175,65 +173,123 @@ body {
 }
 
 .top-header h1{
-	/* font-size: 500%;
-	/*font-weight: 700;*/
-	/* float: left;
-	padding-left: 45%;  */
 	text-align: center;
 	font-size: 500%;
 	font-weight: bold;
+	/* width: 80%; */
+	text-align: center;
 }
 
-.material-icons {
-	/*height: 100%;*/
-	padding-top: 20px;
-	width: 100%;
+.col-md-8 h1{
+	text-align: center;
 }
 
-.back-icon {
-	/*margin-top: 2%;*/
-	float: left;
-	font-size: 100px;
-}
-
-.home-icon{
+.header-icon{
 	width: 50px;
 	height: 0px;
-	float: right;
-	/*margin-top: 2%;*/
-	font-size: 100px;
+	float: left;
 }
-
 
 .line-top {
 	border: 1px solid #2a3484;
 }
 
-#food-picture {
-	margin-top: 5%;
-	width: 110%;
-	margin-right: 5%;
+#search-bar {
+	margin-left: 18%;
+	padding-right: 20%;
 }
 
-.col-md-6{
-	float:left;
+#ingredient-input {
+	width: 139%;
+	height: 5%;
+	margin-top: 1%;
+	font-size: 150%;
+	padding-left: 1%;
+	border: none;
+	float: left;
 }
 
-.row{
-	margin-left: 5%;
-	margin-right: 10%;
+.search-icon {
+	padding-right: 0px;
+	width: 5%;
+	margin-top: 2%;
 }
 
-.section-title{
-	color:crimson;
-	margin-left:1%;
+.search-icon i{
+	float: left;
+	/*padding-top: 20%;*/
+	/*padding-left: 10%;*/
+	font-size: 200%;
+	width: 4%;
 }
 
-.finished-icon{
+.add-ingredient {
+	/*background-color: white;
+	border: none;
+	height: 2%;
+	padding-right: 0px;
+	padding-top: 0px;*/
+	width: 170%;
+	margin-top: 15%;
+	margin-left: 12%;
+	border-radius: 5px;
+	/* background-color: rgb(216, 216, 216);
+	border-color: rgb(186, 186, 186); */
+	background-color: rgb(2, 117, 216);
+	color: white;
+}
+
+.search-line {
 	border: 1px solid black;
-	float:right;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-bottom:2%;
-	margin-right:5%;
+	width: 103%;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+.select-ingredients h2{
+	font-size: 300%;
+}
+
+.drop-down {
+	border: 1px solid black;
+	padding: 5px;
+	padding-left: 0px;
+}
+
+.drop-down h4{
+	float: left;
+	font-size: 190%;
+}
+
+.droplist{
+	position: relative;
+	right: 500%;
+	margin-top: 30%;
+	width: 600%;
+}
+
+.arrow-down {
+	width: 25%;
+	/*margin-bottom: 10px;*/
+}
+
+#ingredientlist{
+	font-size: 130%;
+}
+
+.forward-icon{
+	font-size: 500%;
+}
+
+.wrapper{
+	margin-top: 1%;
+	padding: 0.5%;
+	float: right;
+	margin-bottom: 1%;
+	border-radius: 5px;
+	font-size: 120%;
+	/* background-color: rgb(216, 216, 216);
+	border-color: rgb(186, 186, 186); */
+	background-color: rgb(2, 117, 216);
+	color: white;
 }

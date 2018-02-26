@@ -3,14 +3,15 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- To ensure mobile functionality -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
@@ -19,79 +20,81 @@
 </header>
 
 <body>
-
-  <div class="container">
-
-    <div class="row top-header">
-      <div class="col-md-2 header-icon">
-        <a href="input-ingredients.html">
-          <i class="material-icons back-icon">keyboard_backspace</i>
-        </a>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#meal-plan" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+        <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
+        <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
+        <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
       </div>
-      <div class="col-md-8 recommended-recipes-header">
-        <h1>Recommended Recipes</h1>
-      </div>
-      <div class="col-md-2 headers-icon">
-        <a href="index.html"><i class="material-icons home-icon">home</i></a>
-      </div>
-</div>
-      <div class="line-top">
-      </div>
-
-
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg" alt="food6">
-        <span class="recommended-recipes-name"> Beef-Pesto Panini </span>
-        <span class="recommended-recipes-cooktime"> 15 minutes </span>
-        <span class="ready-indicator"> You have all the ingredients to make this! </span>
-      </div>
-
-      <div class="col-sm-4">
-        <a href="recipe.html">
-          <img class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg" alt="food4">
-        </a>
-        <span class="recommended-recipes-name"> Easy Beef Burrito Skillet </span>
-        <span class="recommended-recipes-cooktime"> 25 minutes </span>
-        <span class="ready-indicator"> You have all the ingredients to make this! </span>
-      </div>
-
-      <div class="col-sm-4">
-        <img class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg" alt="food3">
-        <span class="recommended-recipes-name"> Classic Beef Stroganoff </span>
-        <span class="recommended-recipes-cooktime"> 38 minutes </span>
-        <span class="ready-indicator"> You have all the ingredients to make this! </span>
-      </div>
-
     </div>
-
-    <div class="row">
-
-      <div class="col-sm-4">
-        <img class= "recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/3d51e9de-12c6-4335-b00f-548a27b3d0b4.jpg" alt="food2">
-        <span class="recommended-recipes-name"> Beef Burgundy </span>
-        <span class="recommended-recipes-cooktime"> 20 minutes </span>
-        <span class="not-ready-indicator"> You're missing tomato juice in order to make this! </span>
-      </div>
-
-      <div class="col-sm-4">
-        <img class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/0d36d13d-6fb4-4930-9d68-349fe903d5eb.jpg" alt="food1">
-        <span class="recommended-recipes-name"> Hamburger Gravy </span>
-        <span class="recommended-recipes-cooktime"> 30 minutes </span>
-        <span class="not-ready-indicator"> You're missing gravy in order to make this! </span>
-      </div>
-
-      <div class="col-sm-4">
-        <img class= "recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/aa4bac63-3f3c-41b1-a7e2-a3f0a23f2838.jpg" alt="food5">
-        <span class="recommended-recipes-name"> Beef Enchiladas </span>
-        <span class="recommended-recipes-cooktime"> 55 minutes </span>
-        <span class="not-ready-indicator"> You're missing tortillas in order to make this! </span>
-      </div>
-
-    </div>
-
   </div>
+  <div class="container" id="over-container">
+    Loading... <br>
+    <div id="progressBar" class="progress-bar progress-bar-striped active" role="progressbar"
+    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+  </div>
+  <div class="container">
+  <div id="under-container">
+    <div class="row top-header">
+      <h1>Recommended Recipes</h1>
+    </div>
+    <div class="line-top"></div>
+    <div id="recipes">
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- <a onclick="choseRecipe("Beef-Pesto Panini", "https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg")" href="recipe.html"> -->
+            <img onclick="choseRecipe("Beef-Pesto Panini", "https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg")" class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg" alt="food6">
+          <!-- </a> -->
+          <span onclick="choseRecipe("Beef-Pesto Panini", "https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg")" id="r1" class="recommended-recipes-name"> Beef-Pesto Panini </span>
+          <span class="recommended-recipes-cooktime"> 15 minutes </span>
+          <span class="ready-indicator"> You have all the ingredients to make this! </span>
+        </div>
+        <div class="col-sm-4">
+          <a href="recipe.html" >
+            <img onclick="choseRecipe("Easy Beef Burrito Skillet", "https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg")" class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg" alt="food4">
+          </a>
+          <span id="r2" class="recommended-recipes-name"> Easy Beef Burrito Skillet </span>
+          <span class="recommended-recipes-cooktime"> 25 minutes </span>
+          <span class="ready-indicator"> You have all the ingredients to make this! </span>
+        </div>
 
+        <div class="col-sm-4">
+          <img onclick="choseRecipe("Classic Beef Stroganoff", "https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg")" class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg" alt="food3">
+          <span id="r3" class="recommended-recipes-name"> Classic Beef Stroganoff </span>
+          <span class="recommended-recipes-cooktime"> 38 minutes </span>
+          <span class="ready-indicator"> You have all the ingredients to make this! </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img onclick="choseRecipe("Beef Burgundy", "https://images-gmi-pmc.edge-generalmills.com/3d51e9de-12c6-4335-b00f-548a27b3d0b4.jpg")" class= "recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/3d51e9de-12c6-4335-b00f-548a27b3d0b4.jpg" alt="food2">
+          <span id="r4" class="recommended-recipes-name"> Beef Burgundy </span>
+          <span class="recommended-recipes-cooktime"> 20 minutes </span>
+          <span class="not-ready-indicator"> You're missing tomato juice in order to make this! </span>
+        </div>
+        <div class="col-sm-4">
+          <img onclick="choseRecipe("Hamburger Gravy", "https://images-gmi-pmc.edge-generalmills.com/0d36d13d-6fb4-4930-9d68-349fe903d5eb.jpg")" class="recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/0d36d13d-6fb4-4930-9d68-349fe903d5eb.jpg" alt="food1">
+          <span id="r5" class="recommended-recipes-name"> Hamburger Gravy </span>
+          <span class="recommended-recipes-cooktime"> 30 minutes </span>
+          <span class="not-ready-indicator"> You're missing gravy in order to make this! </span>
+        </div>
+        <div class="col-sm-4">
+          <img onclick="choseRecipe("Beef Enchiladas", "https://images-gmi-pmc.edge-generalmills.com/aa4bac63-3f3c-41b1-a7e2-a3f0a23f2838.jpg")" class= "recommended-recipes-image" src="https://images-gmi-pmc.edge-generalmills.com/aa4bac63-3f3c-41b1-a7e2-a3f0a23f2838.jpg" alt="food5">
+          <span id="r6" class="recommended-recipes-name"> Beef Enchiladas </span>
+          <span class="recommended-recipes-cooktime"> 55 minutes </span>
+          <span class="not-ready-indicator"> You're missing tortillas in order to make this! </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="generateRecipes.js"></script>
+</body>
 </html>
 
 

@@ -1,4 +1,4 @@
-var FUCK = {Bike: 400, Car: 800};
+var items = {Bike: 400, Car: 800};
 
 $(document).ready(function() {
   var goalname = '';
@@ -15,9 +15,9 @@ $(document).ready(function() {
 
 
     if(!goalmoney && goalname) {
-      var preset = FUCK[goalname];
+      var preset = items[goalname];
       if(preset) {
-        goalmoney = FUCK[goalname];
+        goalmoney = items[goalname];
       }
     }
     console.log('goalmoney is: ' + goalmoney);
@@ -59,4 +59,3 @@ function showdropdown() {
     }
 
 }
-

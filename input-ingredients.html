@@ -1,34 +1,46 @@
 <html>
+<title>Input Ingredients</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="style.css"> -->
 <header>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"></span> <span class="w3-hide-small w3-text-light-grey">Home Cooking</span></h1>
+  </div>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- To ensure mobile functionality -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- To ensure mobile functionality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" type="text/css" href="style-input.css" />
 </header>
 <body>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#meal-plan" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+        <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
+        <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
+        <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
+      </div>
+    </div>
+  </div>
 	<div class="container">
 		<div class="row top-header">
-			<div class="col-md-2 header-icon">
-				<a href="index.html"><i class="material-icons back-icon">keyboard_backspace</i></a>
-			</div>
-			<div class="col-md-2 header-icon">
-				<a href="index.html"><i class="material-icons home-icon">home</i></a>
-			</div>
-			<div class="col-md-8">
 				<h1>Add Ingredients</h1>
-			</div>
 		</div>
 		<div class="line-top">
 		</div>
@@ -37,7 +49,7 @@
 				<i class="material-icons ">search</i>
 			</div>
 			<div class="col-md-9">
-				<input type="text" id="ingredient-input" onkeyup="typeingredient()" placeholder="Add an ingredient">
+				<input type="text" spellcheck="true" id="ingredient-input" onkeyup="enterReturn(event)" placeholder="Add an ingredient">
 				<!-- <h3>Search for an ingredient</h3> -->
 			</div>
 			<div class="col-md-2">
@@ -140,14 +152,16 @@
 			<div class="col-md-4">
 				<div id="ingredientlist"> </div>
 				<ul>
-					
+
 				</ul>
 			</div>
 		</div>
 <a href="recommended-recipes.html">
-<div class="wrapper">
-<div class="nexttext"> I'm finished. Give me my recommended recipes.</div></div></a> 
-<script src="script.js"></script>
+	<button onclick="nextPage()" class="wrapper">
+		I'm finished. Give me my recommended recipes.
+	</button>
+</a>
+<script src="script-input.js"></script>
 </body>
 
 </html>
