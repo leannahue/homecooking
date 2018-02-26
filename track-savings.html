@@ -25,20 +25,33 @@
 
 <body>
 
+  <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="homepage.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#meal-plan" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+          <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
+          <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
+          <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
+        </div>
+      </div>
+    </div>
+
   <div class="container">
 
     <div class="row top-header">
       <div class="col-md-2 header-icon">
-        <a href="index.html">
+        <!-- <a href="index.html">
           <i class="material-icons back-icon">keyboard_backspace</i>
-        </a>
+        </a> -->
       </div>
       <div class="col-md-8 tracking-savings-header">
         <h1>Track Savings</h1>
       </div>
-      <div class="col-md-2 headers-icon">
+      <!-- <div class="col-md-2 headers-icon">
         <a href="index.html"><i class="material-icons home-icon">home</i></a>
-      </div>
+      </div> -->
     </div>
       <div class="line-top">
       </div>
@@ -95,10 +108,10 @@
 
 
        <div>
-       <p class="dropbtn" onclick="showdropdown()">
+       <h4 class="dropbtn" onclick="showdropdown()">
            More details
          <i class="material-icons" id="dropdownbtn">keyboard_arrow_down</i>
-       </p>
+       </h4>
          <div id="mydropdown" class="dropdowncontent">
            <div class="container2 vertical rounded">
              <h2>Savings</h2>
