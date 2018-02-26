@@ -17,8 +17,8 @@ function generateList(str, names, images) {
   var array = [];
   // var F2Fkey = "a424e4c0845023455bc2060bf36593a7";
   // var F2Fkey = "1bb35aab149d54449a70218d016a6d28";
-  var F2Fkey = "5c18504d00454741e843775329deee5d";
-  // var F2Fkey = "6ba48d1ca050733e132d8cf997226f16";
+  // var F2Fkey = "5c18504d00454741e843775329deee5d";
+  var F2Fkey = "6ba48d1ca050733e132d8cf997226f16";
   // var F2Fkey = "3a59d17ae007657cb656b23a25992dd4";
 
   $.ajax({
@@ -42,7 +42,7 @@ function generateList(str, names, images) {
       // response["recipes"].forEach((dish) => {
       for(i = 0; i < response["recipes"].length; i++) {
         $.ajax({
-          url: "http://food2fork.com/api/get",
+          url: "https://food2fork.com/api/get",
           type: 'GET',
           data: {
             key: F2Fkey,
@@ -92,8 +92,8 @@ function integrateRecipes(names, images) {
       text = text + '<div class="col-sm-4"><img onclick="choseRecipe(recipe_names[' + i + '],recipe_images[' + i + '],)" class="recommended-recipes-image" src=' + recipe_images[i] + '><span id="r1" class="recommended-recipes-name">' + recipe_names[i] + '</span><span class="recommended-recipes-cooktime"> ' + (Math.floor(Math.random() * 30) + 15) + ' minutes </span><span class="ready-indicator"> You have all the ingredients to make this! </span></div>';
 
     }
-  }
   text = text + '</div>';
+  }
   document.getElementById("recipes").innerHTML = text;
 }
 
