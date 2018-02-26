@@ -22,7 +22,7 @@ function generateList(str, names, images) {
   // var F2Fkey = "3a59d17ae007657cb656b23a25992dd4";
 
   $.ajax({
-    url: "http://food2fork.com/api/search",
+    url: "https://food2fork.com/api/search",
     type: "GET",
     data: {
       key: F2Fkey,
