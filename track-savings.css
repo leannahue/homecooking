@@ -207,12 +207,14 @@ body {
 	padding-right: 5%;
 	/* height: 65%; */
 	margin-bottom: 1%;
+	height: auto;
+	padding-bottom: 2%;
 }
 
 .top-header h1{
 	font-size: 500%;
 	font-weight: bold;
-	/* width: 80%; */
+	width: 100%;
 	text-align: center;
 }
 
@@ -330,6 +332,7 @@ input[type=submit]:hover {
    width: 15%;
  	margin-top: -2%;
  	float: right;
+	margin-bottom: 1%;
  }
 
 
