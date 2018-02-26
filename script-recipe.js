@@ -11,10 +11,11 @@
 var queryString = decodeURIComponent(window.location.search);
 // console.log(queryString);
 queryString = queryString.substring(1);
-var queries = queryString.split("&");
+var queries = queryString.split("+");
 chosen_recipe = queries[0].split("=")[1];
 image_url = queries[1].split("=")[1];
-// console.log(chosen_recipe);
+// ingredients = queries[2].split("=")[1];
+// console.log(ingredients);
 
 document.getElementById("recipe-name").innerHTML = chosen_recipe;
 $('#food-picture').attr('src',image_url);
