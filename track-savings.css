@@ -210,11 +210,11 @@ body {
 }
 
 .top-header h1{
-	/*font-size: 50px;
-	font-weight: 700;*/
-	float: left;
-	padding-left: 12%;
-	padding-top: 4%;
+	text-align: center;
+	font-size: 500%;
+	font-weight: bold;
+	/* width: 80%; */
+	text-align: center;
 }
 
 .material-icons {
@@ -259,11 +259,11 @@ body {
 	text-align: center;
 }
 
-.tracking-savings-header h1 {
+/* .tracking-savings-header h1 {
 	font-size: 500%;
 	text-align: center;
 	font-weight: bold;
-}
+} */
 
 .stats-for-last-meal-text {
 	font-weight: 900;
