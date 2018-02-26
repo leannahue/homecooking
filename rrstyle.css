@@ -256,26 +256,30 @@ body {
 	display: block;
 }
 
-#container {
-	/* opacity: 0; */
+#under-container {
 	text-align: center;
 	/* margin-top: 15%; */
 	transition: opacity 0.3s;
 	-webkit-transition: opacity 0.3s;
-	/* opacity: 0; */
+	opacity: 0;
+	background-color: white;
+	margin-top: 5%;
 }
 
 #over-container {
+	padding: 1%;
+	position: relative;
 	text-align: center;
 	font-size: 300%;
-	padding: 2%;
-	position: relative;
+	/* margin-top: 15%; */
+	opacity: 1;
 	transition: opacity 0.3s;
 	-webkit-transition: opacity 0.3s;
+	height: 20%;
 }
 
 #progressBar {
-	height: 5%;
-	margin-top: 2%;
+	height: 20%;
+	margin-top: 1%;
 	/* margin-bottom: 2%; */
 }
