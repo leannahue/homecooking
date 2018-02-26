@@ -5,7 +5,7 @@ var recipe_array = [];
 var out = 0;
 
 var F2Fkey_array = ["a424e4c0845023455bc2060bf36593a7","1bb35aab149d54449a70218d016a6d28","5c18504d00454741e843775329deee5d","6ba48d1ca050733e132d8cf997226f16","3a59d17ae007657cb656b23a25992dd4"];
-var i = 4;
+var i = 3;
 var F2Fkey = F2Fkey_array[i];
 // function displayIngredients() {
 // 	console.log("hello");
@@ -120,7 +120,7 @@ setTimeout(function(){
   if (recipe_names != []) {
     integrateRecipes(recipe_names, recipe_images,recipe_array);
   }
-}, 6000);
+}, 7000);
 
 // integrateRecipes(recipe_names, recipe_images);
 // recipe_names = ["Beef-Pesto Panini"]
@@ -141,7 +141,7 @@ function choseRecipe(chosen_recipe, image_url, index, biglist) {
   console.log("choseRecipe function was called");
   var chosen_recipe = chosen_recipe;
   var image_url = image_url;
-  var queryString = "?para1=" + chosen_recipe + "+para2=" + image_url;
+  var queryString = "?para1=" + chosen_recipe + "^para2=" + image_url;
   window.location.href = "recipe.html" + queryString;
   // console.log(window.location);
   // localStorage["ingredientstr"] = chosen_recipe;
@@ -151,7 +151,7 @@ function loadingBar() {
   var elem = document.getElementById("progressBar");
   (document.getElementsByClassName("container")[1]).style.opacity = 0;
   var width = 1;
-  var id = setInterval(frame, 60);
+  var id = setInterval(frame, 70);
   var done = 0;
   function frame() {
     if (width >= 100) {

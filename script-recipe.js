@@ -11,7 +11,7 @@
 var queryString = decodeURIComponent(window.location.search);
 // console.log(queryString);
 queryString = queryString.substring(1);
-var queries = queryString.split("+");
+var queries = queryString.split("^");
 chosen_recipe = queries[0].split("=")[1];
 image_url = queries[1].split("=")[1];
 // ingredients = queries[2].split("=")[1];
