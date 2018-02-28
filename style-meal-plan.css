@@ -230,3 +230,19 @@ td {
 	background-color: rgb(2, 117, 216);
 	color: white;
 }
+
+.single-meal-container{
+	display: none;
+
+}
+
+.meal-image{
+	height: 25%;
+	width: 100%;
+}
+
+.show{
+	display: block;
+}
+
+

@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style-meal-plan.css" />
+  <script src="meal-plan.js"></script>
 </header>
 
 <body>
@@ -38,7 +39,7 @@
 				<h1>Weekly Meal Plan</h1>
 		</div>
 		<div class="line-top"></div>
-    <button onclick="" class="button">
+    <button onclick= "auto()" class="button">
       Create a new meal plan.
     </button>
     <table style="width:100%">
@@ -65,13 +66,48 @@
       </tr>
       <tr>
         <td id="meal">Lunch</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td> 
+          <div id="meal-sun" class="single-meal-container">
+            <img class="meal-image" src="https://www.gimmesomeoven.com/wp-content/uploads/2014/03/Fried-Rice-7.jpg">
+          Fried Rice
+          </div>
+        </td>
+        <td>
+          <div id="meal-mon" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg">
+            Beef-Pesto Pannini
+          </div>
+        </td>
+        <td>
+          <div id="meal-tues" class="single-meal-container">
+            <img class="meal-image" src=https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg>
+            Beef Burrito Skillet
+          </div> 
+        </td>
+        <td>
+          <div id="meal-wed" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg">
+            Classic Beef Stroganoff
+          </div>
+        </td>
+        <td>
+          <div id="meal-thurs" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/3d51e9de-12c6-4335-b00f-548a27b3d0b4.jpg">
+            Beef Burgundy
+          </div>
+        </td>
+        <td>
+          <div id="meal-fri" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/0d36d13d-6fb4-4930-9d68-349fe903d5eb.jpg">
+            Hamburger Gravy
+          </div>
+        </td>
+        <td>
+          <div id="meal-sat" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/aa4bac63-3f3c-41b1-a7e2-a3f0a23f2838.jpg">
+            Beef Enchiladas
+          </div>
+        </td>
       </tr>
       <tr>
         <td id="meal">Dinner</td>
