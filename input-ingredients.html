@@ -31,7 +31,7 @@
       <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="#meal-plan" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+        <a href="meal-plan.html" class="w3-bar-item w3-button">Weekly Meal Plan</a>
         <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
         <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
         <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
@@ -61,7 +61,38 @@
 		<div class="row">
 			<div class="col-md-8 select-ingredients">
 				<h2>Select from categories:</h2>
-				<div class="row drop-down">
+
+        <button class="accordion">Vegetables</button>
+        <div class="panel">
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Lettuce"> Lettuce
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cauliflower"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Carrot"> Carrot
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Tomato"> Tomato
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Spinach"> Spinach
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Broccoli"> Broccoli
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Potato"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Onion"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cabbage"> Cabbage
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Peas"> Peas
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cucumber"> Cucumber
+        </div>
+        <button class="accordion">Meats</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistmeats" value="Chicken"> Chicken
+          <input onchange="" type="checkbox" id="droplistmeats" value="Beef"> Beef
+        </div>
+        <button class="accordion">Dairy</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistdairy" value="Milk"> Milk
+          <input onchange="" type="checkbox" id="droplistdairy" value="Cheddar Cheese"> Cheddar Cheese
+        </div>
+        <button class="accordion">Fruits</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistfruits" value="Apple"> Apple
+          <input onchange="" type="checkbox" id="droplistfruits" value="Orange"> Orange
+        </div>
+
+				<!-- <div class="row drop-down">
 					<div class="col-md-11">
 						<h4>Vegetables</h4>
 					</div>
@@ -81,8 +112,8 @@
 							<option>Cucumber</option>
 						</select>
 					</div>
-				</div>
-				<div class="row drop-down">
+				</div> -->
+				<!-- <div class="row drop-down">
 					<div class="col-md-11">
 						<h4>Meats</h4>
 					</div>
@@ -144,7 +175,7 @@
 							<option>Peach</option>
 						</select>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="col-md-4 selected-ingredients">
 				<h2>Selected Ingredients:</h2>
