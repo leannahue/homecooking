@@ -1,0 +1,269 @@
+<html>
+<title>Weekly Meal Plan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<header>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- To ensure mobile functionality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style-meal-plan.css" />
+  <script src="meal-plan.js"></script>
+</header>
+
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="meal-plan.html" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+        <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
+        <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
+        <a href="#savings" class="w3-bar-item w3-button">Browse Recipes</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+		<div class="row top-header">
+				<h1>Weekly Meal Plan</h1>
+		</div>
+		<div class="line-top"></div>
+    <button onclick= "auto()" class="button">
+      Create a new meal plan.
+    </button>
+    <table style="width:100%">
+      <caption>February 25 - March 3</caption>
+      <tr>
+        <th id="blank-corner"></th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <td id="meal">Breakfast</td>
+        <td>
+          <div id="meal-sun-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/19a2c444-878f-43fa-ba41-82e1370e79ba.jpg">
+            Brunch Caserole
+          </div>
+        </td>
+        <td>
+          <div id="meal-mon-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/c8688e24-fd34-4461-8db6-cd677ba6640b.jpg">
+            Hash Brown Waffles
+          </div>
+        </td>
+        <td>
+          <div id="meal-tues-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/9bc21ee4-95e9-4c90-b2fe-0f46f76cd6d5.jpg">
+            Apple Crisp Pancakes
+          </div>
+        </td>
+        <td>
+          <div id="meal-wed-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/9b012bef-3a3a-4ba9-a930-821877eb4dc6.jpg">
+            Strawberry Smoothie
+          </div>
+        </td>
+        <td>
+          <div id="meal-thurs-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/c4576380-1264-4f18-bdf8-2ad98d062d60.jpg">
+            Breakfast Wraps
+          </div>
+        </td>
+        <td>
+          <div id="meal-fri-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/61cccb60-1f53-4283-8d91-118c0ef7df14.jpg">
+            Cheesecake Pancakes
+          </div>
+        </td>
+        <td>
+          <div id="meal-sat-break" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/27aaed53-a7dc-495c-af23-0d5f10b413a6.jpg">
+            Breakfast Calzones
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="meal">Lunch</td>
+        <td>
+          <div id="meal-sun" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/1f78bd31-b8a3-4f54-bff0-d6d60e936bb0.jpg">
+            Mango Fried Rice
+          </div>
+        </td>
+        <td>
+          <div id="meal-mon" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/f1a87202-9df0-40eb-a627-71d10c1c5bd8.jpg">
+            Beef-Pesto Pannini
+          </div>
+        </td>
+        <td>
+          <div id="meal-tues" class="single-meal-container">
+            <img class="meal-image" src=https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg data-toggle="modal" data-target="#mymodal">
+            Beef Burrito Skillet
+
+            <div class="modal fade" id="mymodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h2 id="recipe-name" >Easy Beef Burrito Skillet</h2>
+                              <h3 class="modal-recipe-text">Prep Time: 25 minutes</h3>
+                              <h3 class="modal-recipe-text">Total Time: 25 minutes</h3>
+                              <h3 class="modal-recipe-text">Servings: 6</h3>
+                            </div>
+                            <div class="col-md-5">
+                              <img id="food-picture" src="https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg">
+                            </div>
+                            <div id="x-button" class="col-md-1">
+                              <button type="button" class="btn btn-default" data-dismiss="modal"> x </button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <h2 id="ingredients-text">Ingredients:</h2>
+                            <ul class="lists">
+                              <li id = "godplease">1 lb ground beef</li>
+                              <li>1 cup water</li>
+                              <li>1 cup chunky salsa</li>
+                              <li>1 (15 oz) can black beans, rinsed and drained</li>
+                              <li>4 (6 inch) flour tortillas, sliced into 1-inch strips</li>
+                              <li>1 cup shredded Mexican blend cheese</li>
+                              <li>1/2 cup sour cream</li>
+                              <li>1/4 cup sliced green onions</li>
+                            </ul>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+
+          </div>
+        </td>
+        <td>
+          <div id="meal-wed" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg">
+            Classic Beef Stroganoff
+          </div>
+        </td>
+        <td>
+          <div id="meal-thurs" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/3d51e9de-12c6-4335-b00f-548a27b3d0b4.jpg">
+            Beef Burgundy
+          </div>
+        </td>
+        <td>
+          <div id="meal-fri" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/0d36d13d-6fb4-4930-9d68-349fe903d5eb.jpg">
+            Hamburger Gravy
+          </div>
+        </td>
+        <td>
+          <div id="meal-sat" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/aa4bac63-3f3c-41b1-a7e2-a3f0a23f2838.jpg">
+            Beef Enchiladas
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="meal">Dinner</td>
+        <td>
+          <div id="meal-sun-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/c53a3431-7987-4b8f-ac38-e190e8103a04.jpg">
+            Easy Pork Skillet
+          </div>
+        </td>
+        <td>
+          <div id="meal-mon-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/ba86e1b6-3f88-43b1-b8b7-897ab650143b.jpg">
+            Sweet and Sour Chicken
+          </div>
+        </td>
+        <td>
+          <div id="meal-tues-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/6ce50665-495d-4802-8907-3bc20bd86ede.jpg">
+            Refried Bean Roll-Ups
+          </div>
+        </td>
+        <td>
+          <div id="meal-wed-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/71a200cb-3835-49b4-8d4a-e8066a7d7af1.jpg">
+            Steakhouse Salad
+          </div>
+        </td>
+        <td>
+          <div id="meal-thurs-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/fd827d29-c632-4222-8948-7e7ee6bf4dec.jpg">
+            Turkey Club Soup
+          </div>
+        </td>
+        <td>
+          <div id="meal-fri-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/e4128539-2ecf-44c2-b6a4-a027248ec5a1.jpg">
+            Pasta Primavera
+          </div>
+        </td>
+        <td>
+          <div id="meal-sat-din" class="single-meal-container">
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/83fb8bcf-4b37-40fe-af23-2a4f7934783e.jpg" data-toggle="modal" data-target="#mymodal">
+            Savory Oven Beef Ribs
+
+          </div>
+        </td>
+      </tr>
+    </table>
+    <a href="grocery-list.html">
+    	<button onclick="" class="button">
+    		I'm finished. Take me to my grocery list.
+    	</button>
+    </a>
+  </div>
+
+  <!-- <image type="image" class="image" src="https://images-gmi-pmc.edge-generalmills.com/83fb8bcf-4b37-40fe-af23-2a4f7934783e.jpg" data-toggle="modal" data-target="#mymodal">
+  </button>
+  <div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3> Enter in <span id="bold-one"> one </span> of the following! </h3>
+          <button type="button" class="btn btn-default" data-dismiss="modal"> x </button>
+        </div>
+        <div class="modal-body">
+          <div>
+              <div>
+                <label for="monetary_input"> <span id="modal-text">Set a general monetary goal </span> </label>
+                <input type="text" id="monetary_input" name="Monetary" placeholder="Monetary goal">
+
+                <h2 id="big-or"> OR </h2>
+
+                <label for="wishlist_input"><span id="modal-text"> Save up for your specific wishlist item </span></label>
+                <input type="text" id="wishlist_input" name="Wishlist" placeholder="Wishlist goal">
+
+                <input id="modal-submit" type="submit" value="Submit">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</body>
+
+</html>
