@@ -237,6 +237,16 @@ td {
 
 }
 
+#meal-tues .meal-image{
+	cursor: pointer;
+}
+
+#meal-tues .meal-image:hover{
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
 .meal-image{
 	height: 25%;
 	width: 100%;
