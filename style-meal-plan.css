@@ -150,7 +150,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 
 body {
-	background-image: url(http://peachesfresh.com.au/wp-content/uploads/2016/05/Web_Background_May8.jpg);
+	background-image: url(wood-background.jpg);
 	background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -247,3 +247,34 @@ td {
 }
 
 
+#food-picture {
+	margin-top: 5%;
+	width: 110%;
+	height: 26%;
+}
+
+.modal-recipe-text {
+	text-align: left;
+}
+#recipe-name {
+	font-size: 225%;
+	color: rgb(2, 117, 216);
+	text-align: left;
+}
+
+#ingredients-text {
+	text-align: left;
+	color: rgb(2, 117, 216);
+	padding-left: 2.5%;
+}
+
+li {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+#x-button button {
+	margin-right: 5%;
+	margin-top: -65%;
+}
