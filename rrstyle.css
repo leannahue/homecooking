@@ -206,7 +206,14 @@ body {
 .recommended-recipes-image {
 	width: 100%;
 	height: 30%;
-	padding-top: 3%;
+	margin-top: 3%;
+}
+
+.recommended-recipes-image:hover {
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	cursor: pointer;
 }
 
 .recommended-recipes-wrapper div img {
