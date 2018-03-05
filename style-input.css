@@ -27,7 +27,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 /* End extract */
 html,body{font-family:Work Sans,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 ..w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
@@ -150,7 +150,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 
 body {
-	background-image: url(http://maxpixel.freegreatpicture.com/static/photo/1x/Table-Cooking-Background-Herb-Food-Wooden-Knife-2879265.jpg);
+	background-image: url(background-image.jpg);
 	background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
