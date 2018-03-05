@@ -19,6 +19,10 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style-meal-plan.css" />
   <script src="meal-plan.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 </header>
 
 <body>
@@ -39,11 +43,19 @@
 				<h1>Weekly Meal Plan</h1>
 		</div>
 		<div class="line-top"></div>
-    <button onclick= "auto()" class="button">
-      Create a new meal plan.
-    </button>
+    <div class="row">
+      <div class="col-md-9">
+          <div class="dates">
+              <span> <i class="material-icons">arrow_back</i> February 25 - March 3     <i class="material-icons">arrow_forward</i> </span>
+          </div>
+        </div>
+      <div class="col-md-3">
+        <button onclick= "auto()" id="button1">
+                Create a new meal plan.
+        </button>
+      </div>
+    </div>
     <table style="width:100%">
-      <caption>February 25 - March 3</caption>
       <tr>
         <th id="blank-corner"></th>
         <th>Sunday</th>
@@ -230,7 +242,7 @@
       </tr>
     </table>
     <a href="grocery-list.html">
-    	<button onclick="" class="button">
+    	<button onclick="" id="button2">
     		I'm finished. Take me to my grocery list.
     	</button>
     </a>
