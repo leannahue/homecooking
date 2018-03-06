@@ -27,7 +27,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 /* End extract */
 html,body{font-family:Work Sans,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 ..w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
@@ -150,7 +150,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 
 body {
-	background-image: url(http://peachesfresh.com.au/wp-content/uploads/2016/05/Web_Background_May8.jpg);
+	background-image: url(background-image.jpg);
 	background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -180,19 +180,29 @@ body {
   margin-left: 5%;
 }
 
-table, th, td {
+table td {
   border: 1px solid black;
   border-collapse: collapse;
   width: 14%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   /* margin-bottom: 2%; */
   font-size: 130%;
   text-align: center;
   padding: 0.5%;
 }
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 14%;
+  /* margin-top: 2%; */
+  /* margin-bottom: 2%; */
+  font-size: 120%;
+  text-align: center;
+  /* padding: 0.5%; */
+}
 
 caption {
-  font-size: 150%;
+  font-size: 200%;
   text-align: center;
   color: black;
   font-weight: 500;
@@ -209,8 +219,9 @@ td {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   width: 1px;
-  height: 200px;
+  height: 160px;
   padding: none;
+	font-weight: bold;
 }
 
 #blank-corner {
@@ -237,6 +248,16 @@ td {
 
 }
 
+#meal-tues .meal-image{
+	cursor: pointer;
+}
+
+#meal-tues .meal-image:hover{
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
 .meal-image{
 	height: 25%;
 	width: 100%;
@@ -247,3 +268,68 @@ td {
 }
 
 
+#food-picture {
+	margin-top: 5%;
+	width: 110%;
+	height: 26%;
+}
+
+.modal-recipe-text {
+	text-align: left;
+}
+#recipe-name {
+	font-size: 225%;
+	color: rgb(2, 117, 216);
+	text-align: left;
+}
+
+#ingredients-text {
+	text-align: left;
+	color: rgb(2, 117, 216);
+	padding-left: 2.5%;
+}
+
+li {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+#x-button button {
+	margin-right: 5%;
+	margin-top: -65%;
+}
+
+#button1 {
+  margin-top: 1%;
+	/* padding: 0.5%; */
+	float: right;
+		/* margin-bottom: 1%; */
+	/* border-radius: 5px; */
+	font-size: 120%;
+	background-color: rgb(2, 117, 216);
+	color: white;
+}
+
+#button2 {
+  margin-top: 1%;
+	padding: 0.5%;
+	float: right;
+	margin-bottom: 1%;
+	border-radius: 5px;
+	font-size: 120%;
+	background-color: rgb(2, 117, 216);
+	color: white;
+}
+
+.dates {
+	text-align: center;
+	padding-left: 40%;
+}
+
+.dates span {
+	font-weight: bold;
+	font-size: 180%;
+	margin-bottom = 0%;
+	padding-bottom = 0%;
+}
