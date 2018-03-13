@@ -213,7 +213,7 @@ body {
 }
 
 .top-header h1{
-	font-size: 500%;
+	font-size: 300%;
 	font-weight: bold;
 	width: 100%;
 	text-align: center;
@@ -250,7 +250,8 @@ body {
 .progress-text {
 	font-weight: bold;
 	font-size: 175%;
-	padding-bottom: 3%;
+	padding-bottom: 4%;
+	border-bottom:2px solid #0dbab1;
 }
 #boxy {
 	display: flex;
@@ -303,7 +304,10 @@ body {
 #button-id {
 	background-color: #0dbab1;
 	border-color: #0dbab1;
+	font-weight:bold;
+	font-size:115%;
 	cursor: pointer;
+	width:15%;
 }
 
 #button-id:hover {
@@ -508,4 +512,10 @@ input[type=submit]:hover {
  	float: left;
  	margin-top: 4%;
  	margin-left: 45%;
+ }
+
+ .stats-box{
+ 	border:1px solid black;
+ 	margin-left:30%;
+ 	margin-right:30%;
  }
