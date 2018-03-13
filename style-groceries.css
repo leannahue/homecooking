@@ -172,6 +172,7 @@ body {
 	border-radius: 10px;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-bottom: 1%;
 }
 
 .top-header h1{
@@ -183,6 +184,7 @@ body {
 
 .line-top {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 	margin-bottom: 2%;
 }
 
@@ -213,7 +215,8 @@ body {
 .section-title {
 	margin-left:1%;
 	color:white;
-	background-color:rgb(2, 117, 216);
+	/* background-color:rgb(2, 117, 216); */
+	background-color: #0dbab1;
 	padding-left:1%;
 	padding-top: .5%;
 	padding-bottom: .5%;

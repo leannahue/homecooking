@@ -175,6 +175,7 @@ body {
 
 .line-top {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 	margin-bottom: 2%;
 }
 
@@ -232,7 +233,8 @@ body {
 	height: 5%;
 }
 .progress-bar {
-
+	background-color: #0dbab1;
+	border-color: #0dbab1;
 }
 
 .progress-bar-text {
@@ -243,6 +245,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 .progress-text {
 	font-weight: bold;
@@ -298,9 +301,26 @@ body {
 }
 
 #button-id {
-
+	background-color: #0dbab1;
+	border-color: #0dbab1;
+	cursor: pointer;
 }
 
+#button-id:hover {
+		color: white;
+		background-color: #3b8c88;
+}
+
+#modal-submit {
+	background-color: #0dbab1;
+	border-color: #0dbab1;
+	cursor: pointer;
+}
+
+#modal-submit:hover {
+		color: white;
+		background-color: #3b8c88;
+}
 
 input[type=text], select {
     width: 100%;
@@ -454,6 +474,7 @@ input[type=submit]:hover {
    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
    border-radius: 1%;
    padding: 1%;
+
  }
 
 
