@@ -277,18 +277,25 @@ td {
 
 .modal-recipe-text {
 	text-align: left;
+	padding-left:5%;
 }
 #recipe-name {
 	font-size: 225%;
 	color: rgb(2, 117, 216);
 	text-align: left;
+	padding-left:5%;
 }
 
-#ingredients-text {
+.header-text {
 	text-align: left;
 	color: rgb(2, 117, 216);
-	padding-left: 2.5%;
+	padding-left: 5%;
 }
+
+.lists {
+	padding-right:5%;
+}
+
 
 li {
 	text-align: left;
