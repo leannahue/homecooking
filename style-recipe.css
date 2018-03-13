@@ -207,6 +207,7 @@ body {
 
 .line-top {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 }
 
 #food-picture {
@@ -242,12 +243,20 @@ body {
 	font-size: 150%; */
 	margin-top: 1%;
 	padding: 0.5%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
 	float: right;
 	margin-bottom: 1%;
 	border-radius: 5px;
 	font-size: 140%;
 	/* background-color: rgb(216, 216, 216);
 	border-color: rgb(186, 186, 186); */
-	background-color: rgb(2, 117, 216);
+	/* background-color: rgb(2, 117, 216); */
+	background-color: #0dbab1;
 	color: white;
+}
+
+.finished-icon:hover {
+		color: white;
+		background-color: #3b8c88;
 }

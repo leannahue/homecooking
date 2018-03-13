@@ -166,6 +166,7 @@ body {
 
 .line-top {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 }
 
 
@@ -277,4 +278,6 @@ body {
 	height: 20%;
 	margin-top: 1%;
 	/* margin-bottom: 2%; */
+	background-color: #0dbab1;
+	border-color: #0dbab1;
 }

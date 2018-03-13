@@ -4,10 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <link rel="stylesheet" href="style.css"> -->
 <header>
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"></span> <span class="w3-hide-small w3-text-light-grey">Home Cooking</span></h1>
-  </div>
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -38,7 +34,7 @@
       </div>
     </div>
   </div>
-	<div class="container">
+	<div class="container c1">
 		<div class="row top-header">
 				<h1>Add Ingredients</h1>
 		</div>
@@ -61,7 +57,141 @@
 		<div class="row">
 			<div class="col-md-8 select-ingredients">
 				<h2>Select from categories:</h2>
-				<div class="row drop-down">
+
+        <button onclick="showVeg()" class="accordion">Vegetables</button>
+        <div id="dropdown-veg" class="panel dropdown-content">
+          <table style="width:100%">
+            <tr class="top">
+              <th onclick="additemveg('Lettuce')">Lettuce</th>
+              <th onclick="additemveg('Cauliflower')">Cauliflower</th>
+              <th onclick="additemveg('Carrot')" class="right">Carrot</th>
+            </tr>
+            <tr>
+              <th onclick="additemveg('Tomato')">Tomato</th>
+              <th onclick="additemveg('Spinach')">Spinach</th>
+              <th onclick="additemveg('Broccoli')" class="right">Broccoli</th>
+            </tr>
+            <tr>
+              <th onclick="additemveg('Cucumber')">Cucumber</th>
+              <th onclick="additemveg('Garlic')">Garlic</th>
+              <th onclick="additemveg('Potato')" class="right">Potato</th>
+            </tr>
+            <tr>
+              <th onclick="additemveg('Bell Pepper')">Bell Pepper</th>
+              <th onclick="additemveg('Avocado')">Avocado</th>
+              <th onclick="additemveg('Zucchini')" class="right">Zucchini</th>
+            </tr>
+          </table>
+        </div>
+
+        <button onclick="showMeats()" class="accordion">Meats</button>
+        <div id="dropdown-meats" class="panel dropdown-content">
+          <table style="width:100%">
+            <tr class="top">
+              <th onclick="additemmeats('Chicken')">Chicken</th>
+              <th onclick="additemmeats('Beef')">Beef</th>
+              <th  onclick="additemmeats('Steak')" class="right">Steak</th>
+            </tr>
+            <tr>
+              <th onclick="additemmeats('Pork')">Pork</th>
+              <th onclick="additemmeats('Lamb')">Lamb</th>
+              <th onclick="additemmeats('Bacon')" class="right">Bacon</th>
+            </tr>
+            <tr>
+              <th onclick="additemmeats('Sausage')">Sausage</th>
+              <th onclick="additemmeats('Ham')">Ham</th>
+              <th onclick="additemmeats('Prosciutto')" class="right">Prosciutto</th>
+            </tr>
+            <tr>
+              <th onclick="additemmeats('Salami')">Salami</th>
+              <th onclick="additemmeats('Duck')">Duck</th>
+              <th onclick="additemmeats('Pepperoni')" class="right">Pepperoni</th>
+            </tr>
+          </table>
+        </div>
+
+        <button onclick="showDairy()" class="accordion">Dairy</button>
+        <div id="dropdown-dairy" class="panel dropdown-content">
+          <table style="width:100%">
+            <tr class="top">
+              <th onclick="additemdairy('Milk')">Milk</th>
+              <th onclick="additemdairy('Butter')">Butter</th>
+              <th onclick="additemdairy('Cheddar Cheese')" class="right">Cheddar Cheese</th>
+            </tr>
+            <tr>
+              <th onclick="additemdairy('Eggs')">Eggs</th>
+              <th onclick="additemdairy('Parmesan Cheese')">Parmesan Cheese</th>
+              <th onclick="additemdairy('American Cheese')" class="right">American Cheese</th>
+            </tr>
+            <tr>
+              <th onclick="additemdairy('Yogurt')">Yogurt</th>
+              <th onclick="additemdairy('Sour Cream')">Sour Cream</th>
+              <th onclick="additemdairy('Cream Cheese')" class="right">Cream Cheese</th>
+            </tr>
+            <tr>
+              <th onclick="additemdairy('Whipped Cream')">Whipped Cream</th>
+              <th onclick="additemdairy('Condensed Milk')">Condensed Milk</th>
+              <th onclick="additemdairy('Feta Cheese')" class="right">Feta Cheese</th>
+            </tr>
+          </table>
+        </div>
+
+        <button onclick="showFruits()" class="accordion">Fruits</button>
+        <div id="dropdown-fruits" class="panel dropdown-content">
+          <table style="width:100%">
+            <tr class="top">
+              <th onclick="additemfruits('Strawberries')">Strawberries</th>
+              <th onclick="additemfruits('Apples')">Apples</th>
+              <th onclick="additemfruits('Bananas')" class="right">Bananas</th>
+            </tr>
+            <tr>
+              <th onclick="additemfruits('Cherries')">Cherries</th>
+              <th onclick="additemfruits('Grapes')">Grapes</th>
+              <th onclick="additemfruits('Oranges')" class="right">Oranges</th>
+            </tr>
+            <tr>
+              <th onclick="additemfruits('Lemons')">Lemons</th>
+              <th onclick="additemfruits('Limes')">Limes</th>
+              <th onclick="additemfruits('Pineapples')" class="right">Pineapples</th>
+            </tr>
+            <tr>
+              <th onclick="additemfruits('Blueberries')">Blueberries</th>
+              <th onclick="additemfruits('Peaches')">Peaches</th>
+              <th onclick="additemfruits('Mangos')" class="right">Mangos</th>
+            </tr>
+          </table>
+        </div>
+        <!-- <div class="panel">
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Lettuce"> Lettuce
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cauliflower"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Carrot"> Carrot
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Tomato"> Tomato
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Spinach"> Spinach
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Broccoli"> Broccoli
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Potato"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Onion"> Cauliflower
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cabbage"> Cabbage
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Peas"> Peas
+          <input onchange="additemveg" type="checkbox" class="droplistveg" value="Cucumber"> Cucumber
+        </div> -->
+
+        <!-- <button class="accordion">Meats</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistmeats" value="Chicken"> Chicken
+          <input onchange="" type="checkbox" id="droplistmeats" value="Beef"> Beef
+        </div>
+        <button class="accordion">Dairy</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistdairy" value="Milk"> Milk
+          <input onchange="" type="checkbox" id="droplistdairy" value="Cheddar Cheese"> Cheddar Cheese
+        </div>
+        <button class="accordion">Fruits</button>
+        <div class="panel">
+          <input onchange="" type="checkbox" id="droplistfruits" value="Apple"> Apple
+          <input onchange="" type="checkbox" id="droplistfruits" value="Orange"> Orange
+        </div> -->
+
+				<!-- <div class="row drop-down">
 					<div class="col-md-11">
 						<h4>Vegetables</h4>
 					</div>
@@ -81,8 +211,8 @@
 							<option>Cucumber</option>
 						</select>
 					</div>
-				</div>
-				<div class="row drop-down">
+				</div> -->
+				<!-- <div class="row drop-down">
 					<div class="col-md-11">
 						<h4>Meats</h4>
 					</div>
@@ -144,7 +274,7 @@
 							<option>Peach</option>
 						</select>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="col-md-4 selected-ingredients">
 				<h2>Selected Ingredients:</h2>
@@ -156,11 +286,14 @@
 				</ul>
 			</div>
 		</div>
+  </div>
+    <div class="container c2">
 <a href="recommended-recipes.html">
 	<button onclick="nextPage()" class="wrapper">
 		I'm finished. Give me my recommended recipes.
 	</button>
 </a>
+</div>
 <script src="script-input.js"></script>
 </body>
 
