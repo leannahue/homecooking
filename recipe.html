@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<h2 class="section-title">Ingredients:</h2>
+			<h2 class="section-title2">Ingredients:</h2>
 			<ul id="ingredients" class="lists">
 				<li>1 lb ground beef</li>
 				<li>1 cup water</li>
@@ -62,17 +62,35 @@
 			</ul>
 		</div>
 		<div class="row">
-			<h2 class="section-title">Steps:</h2>
+			<h2 class="section-title2">Steps:</h2>
 			<ol class="lists">
 				<li>In a large skillet, brown beef until no longer pink. Drain. Add taco seasoning, water, salsa and beans. Cook over medium heat for 3-5 minutes or until the sauce thickens. Reduce heat to low.</li>
 				<li>Stir in the tortilla strips and then top with cheese. Remove skillet from heat and let cheese melt.</li>
 				<li>Top with sour cream and sprinkle with green onions. Serve immediately.</li>
 		</div>
-    <a href="index.html">
-      <button class="finished-icon">
-        I'm finished cooking!
-		    </button>
-    </a>
+    
+    <button class="finished-icon" data-toggle="modal" data-target="#mymodal">
+      <span id="button-label"> I'm finished cooking! </span>
+    </button>
+    <div class="modal fade" id="mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="congrats"> Congratulations on making a meal! </h3>
+            <h3 class="congrats"> Nice job on going the extra mile to cook! </h3>
+            <h3 class="congrats"> Keep at cooking, you're doing great! </h3>
+            <a href="index.html">
+              <button class="finished-icon2">
+              Go back to the home page
+            </button>
+          </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
 	</div>
 	<script src="script-recipe.js"></script>
 </body>
