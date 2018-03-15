@@ -396,12 +396,19 @@ th:hover {
 
 .accordion:after {
     content: '\002B';
+		/* content: '\02795'; */
     /* color: #777; */
 		color: white;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 		/* border-radius:  */
+}
+
+.accordion.active:after {
+	/* content: "\2796"; */
+	content: 	'\002D';
+	color: white;
 }
 
 .panel {
