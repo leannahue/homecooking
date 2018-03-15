@@ -167,6 +167,10 @@ body {
 	float: left;
 }
 
+#current-page {
+	background-color:lightgray;
+}
+
 .home-icon {
 	font-size: 700%;
   margin-left: 15%;

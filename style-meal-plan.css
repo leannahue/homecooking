@@ -167,6 +167,10 @@ body {
 	padding-right: 5%;
 }
 
+#current-page {
+	background-color:lightgray;
+}
+
 .top-header h1{
 	text-align: center;
 	font-size: 300%;
