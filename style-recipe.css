@@ -185,7 +185,8 @@ body {
 }
 
 #current-page{
-	background-color:lightgray;
+	/* background-color:lightgray; */
+	background-color: #DFEFF0;
 }
 .material-icons {
 	/*height: 100%;*/

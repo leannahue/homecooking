@@ -168,7 +168,8 @@ body {
 }
 
 #current-page {
-	background-color:lightgray;
+	/* background-color:lightgray; */
+	background-color: #DFEFF0;
 }
 
 .top-header h1{
@@ -329,7 +330,7 @@ li {
 	padding-right: 4%;
 }
 
-#button1:hover, #button2:hover, #remove-meal button:hover, 
+#button1:hover, #button2:hover, #remove-meal button:hover,
 #edit-meal button:hover
 {
 		color: white;

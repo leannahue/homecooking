@@ -176,7 +176,8 @@ body {
 }
 
 #current-page {
-	background-color:lightgray;
+	/* background-color:lightgray; */
+	background-color: #DFEFF0;
 }
 
 .top-header h1{

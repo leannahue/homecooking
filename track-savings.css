@@ -168,7 +168,8 @@ body {
 }
 
 #current-page {
-	background-color:lightgray;
+	/* background-color:lightgray; */
+	background-color: #DFEFF0;
 }
 
 .home-icon {
