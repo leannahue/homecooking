@@ -185,6 +185,7 @@ body {
 
 .line-divider {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 	margin-bottom: 1%;
 	width: 32%;
 	margin-left: 34.25%;
@@ -255,7 +256,8 @@ body {
 	font-weight: bold;
 	font-size: 175%;
 	padding-bottom: 4%;
-	border-bottom:2px solid #0dbab1;
+	border-bottom:2px solid #3b8c88;
+;
 }
 #boxy {
 	display: flex;
@@ -545,6 +547,6 @@ input[type=submit]:hover {
 
  .stats-box{
  	/*border:1px solid black;*/
- 	border-left: 2px solid #0dbab1;
+ 	border-left: 2px solid #3b8c88;
  	padding-top:1%;
  }
