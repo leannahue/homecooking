@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('#mymodal').modal('hide');
     // $('#progressshiz').css({visibility: "visible", position: "relative"});
     $('#goalnames').html(goalname + ": ");
-    $('#goalmoneys').html("your goal for $" + goalmoney);
+    $('#goalmoneys').html(" of your $" + goalmoney + " goal");
     var prc = Math.round(160.00 * 100 / goalmoney);
     if(prc > 100) {
       prc = 100;
