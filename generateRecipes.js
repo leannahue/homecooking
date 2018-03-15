@@ -103,7 +103,7 @@ function integrateRecipes(names, images, biglist) {
       if (i % 3 == 0 && i != 0) { // rows have 3 things each
         text = text + '</div><div class="row">'; // start a new row
       }
-      text = text + '<div class="col-sm-4"><img onclick="choseRecipe(recipe_names[' + i + '],recipe_images[' + i + '])" class="recommended-recipes-image" src=' + recipe_images[i] + '><span id="r1" class="recommended-recipes-name">' + recipe_names[i] + '</span><span class="recommended-recipes-cooktime"> ' + (Math.floor(Math.random() * 30) + 15) + ' minutes </span><span class="ready-indicator"> You have all the ingredients to make this! </span></div>';
+      text = text + '<div class="col-sm-4"><img onclick="choseRecipe(recipe_names[' + i + '],recipe_images[' + i + '])" class="recommended-recipes-image" src=' + recipe_images[i] + '><span id="r1" class="recommended-recipes-name">' + recipe_names[i] + '</span><span class="recommended-recipes-cooktime"> ' + (Math.floor(Math.random() * 30) + 15) + ' minutes </span></div>';
 
     }
     text = text + '</div>';

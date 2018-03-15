@@ -232,7 +232,7 @@ body {
 	font-weight: bold;
 	display: block;
 	color:#3b8c88;
-	text-shadow:1px 0px black;
+	/* text-shadow:1px 0px black; */
 }
 
 .recommended-recipes-cooktime {
