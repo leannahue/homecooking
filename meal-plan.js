@@ -1,4 +1,5 @@
 var notshowing = true;
+var added = true;
 
 function auto() {
 	if (notshowing) {
@@ -26,3 +27,18 @@ function auto() {
 	notshowing = false;
 	}
 }
+
+function remove(){
+	if (added) {
+	document.getElementById("meal-tues").classList.toggle("show");	
+	}
+}
+
+
+function edit(newmeal){
+	document.getElementById("meal-tues-food").innerHTML = newmeal;
+	document.getElementById("recipe-name").innerHTML = newmeal;
+	document.getElementById("meal-tues-img").src = "https://images-gmi-pmc.edge-generalmills.com/da1ce25d-6366-4b24-a1d5-dab592bf95bf.jpg";
+	document.getElementById("food-picture").src = "https://images-gmi-pmc.edge-generalmills.com/da1ce25d-6366-4b24-a1d5-dab592bf95bf.jpg";
+}
+

@@ -167,6 +167,10 @@ body {
 	padding-right: 5%;
 }
 
+#current-page {
+	background-color:lightgray;
+}
+
 .top-header h1{
 	text-align: center;
 	font-size: 300%;
@@ -281,14 +285,14 @@ td {
 }
 #recipe-name {
 	font-size: 225%;
-	color: rgb(2, 117, 216);
+	color: #0dbab1;
 	text-align: left;
 	padding-left:5%;
 }
 
 .header-text {
 	text-align: left;
-	color: rgb(2, 117, 216);
+	color: #0dbab1;
 	padding-left: 5%;
 }
 
@@ -323,7 +327,9 @@ li {
 	padding-right: 4%;
 }
 
-#button1:hover, #button2:hover {
+#button1:hover, #button2:hover, #remove-meal button:hover, 
+#edit-meal button:hover
+{
 		color: white;
 		background-color: #3b8c88;
 }
@@ -342,6 +348,16 @@ li {
 	color: white;
 }
 
+#remove-meal button{
+	background-color: #0dbab1;
+	color: white;
+}
+
+#edit-meal button{
+	background-color: #0dbab1;
+	color: white;
+}
+
 .dates {
 	text-align: center;
 	padding-left: 40%;
@@ -352,4 +368,21 @@ li {
 	font-size: 180%;
 	margin-bottom = 0%;
 	padding-bottom = 0%;
+}
+
+.modal-backdrop {
+    visibility: hidden !important;
+}
+.modal.in {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.choose-meal th{
+	text-align: left;
+	background-color: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.choose-meal th:hover{
+	background-color: rgba(0,0,0,0.5);
 }

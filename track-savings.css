@@ -167,6 +167,10 @@ body {
 	float: left;
 }
 
+#current-page {
+	background-color:lightgray;
+}
+
 .home-icon {
 	font-size: 700%;
   margin-left: 15%;
@@ -308,9 +312,17 @@ body {
 	font-size:115%;
 	cursor: pointer;
 	width:15%;
+	color: white;
+	font-align: center;
+	border-radius: 4px;
 }
 
 #button-id:hover {
+		color: white;
+		background-color: #3b8c88;
+}
+
+#button-id:active {
 		color: white;
 		background-color: #3b8c88;
 }
@@ -353,16 +365,24 @@ input[type=submit]:hover {
 .dropbtn{
   font-weight: bold;
 	cursor: pointer;
-   width: 15%;
+  width: 16%;
  	margin-top: -2%;
  	float: right;
 	margin-bottom: 1%;
+	padding: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
  }
 
+.dropbtn:hover {
+	background-color: lightgray;
+	border-radius: 4px;
+}
 
  #dropdownbtn{
  	padding-top: 0%;
  	width: 2%;
+	padding-right: 12%;
  }
 
  .dropdowncontent{  /*drop down stuff is hidden at first */
@@ -402,7 +422,8 @@ input[type=submit]:hover {
    float: left;
    margin-right: 5%;
    position: relative;
-   background: #825;
+   /* background: #825; */
+	 background: #3b8c88;
    height: 20%;
    width: 11%;
    color: #fff;
@@ -417,7 +438,8 @@ input[type=submit]:hover {
    float: left;
    margin-right: 5%;
    position: relative;
-   background: #825;
+   /* background: #825; */
+	 background: #3b8c88;
    height: 15%;
    width: 11%;
    color: #fff;
@@ -432,7 +454,8 @@ input[type=submit]:hover {
    float: left;
    margin-right: 5%;
    position: relative;
-   background: #825;
+   /* background: #825; */
+	 background: #3b8c88;
    height: 30%;
    width: 11%;
    color: #fff;
@@ -447,7 +470,8 @@ input[type=submit]:hover {
    float: left;
    margin-right: 5%;
   position: relative;
-   background: #825;
+   /* background: #825; */
+	 background: #3b8c88;
    height: 15%;
    width: 11%;
    color: #fff;
@@ -462,7 +486,8 @@ input[type=submit]:hover {
    float: left;
    margin-right: 5%;
    position: relative;
-   background: #825;
+   /* background: #825; */
+	 background: #3b8c88;
    height: 10%;
    width: 11%;
    color: #fff;
@@ -514,9 +539,12 @@ input[type=submit]:hover {
  	margin-left: 45%;
  }
 
+.stats-info{
+	padding-right:5%;
+}
+
  .stats-box{
- 	border:1px solid black;
- 	margin-left:30%;
- 	margin-right:30%;
+ 	/*border:1px solid black;*/
+ 	border-left: 2px solid #0dbab1;
  	padding-top:1%;
  }

@@ -31,7 +31,7 @@
       <a href="index.html" class="w3-bar-item w3-button"><b>HC</b> Home Cooking</a>
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="meal-plan.html" class="w3-bar-item w3-button">Weekly Meal Plan</a>
+        <a href="meal-plan.html" class="w3-bar-item w3-button" id="current-page">Weekly Meal Plan</a>
         <a href="input-ingredients.html" class="w3-bar-item w3-button">Cook With What You Have</a>
         <a href="track-savings.html" class="w3-bar-item w3-button">Track Savings</a>
       </div>
@@ -126,8 +126,8 @@
         </td>
         <td>
           <div id="meal-tues" class="single-meal-container">
-            <img class="meal-image" src=https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg data-toggle="modal" data-target="#mymodal">
-            Beef Burrito Skillet
+            <img class="meal-image" id="meal-tues-img" src=https://images-gmi-pmc.edge-generalmills.com/d4dcc817-2d25-4cbb-807e-d6795be62fac.jpg data-toggle="modal" data-target="#mymodal">
+            <div id="meal-tues-food"> Beef Burrito Skillet </div>
 
             <div class="modal fade" id="mymodal">
               <div class="modal-dialog">
@@ -135,7 +135,7 @@
                   <div class="modal-header">
                           <div class="row">
                             <div class="col-md-6">
-                              <h2 id="recipe-name" >Easy Beef Burrito Skillet</h2>
+                              <h2 id="recipe-name">Easy Beef Burrito Skillet</h2>
                               <h3 class="modal-recipe-text">Prep Time: 25 minutes</h3>
                               <h3 class="modal-recipe-text">Total Time: 25 minutes</h3>
                               <h3 class="modal-recipe-text">Servings: 6</h3>
@@ -168,6 +168,51 @@
                               <li>Stir in the tortilla strips and then top with cheese. Remove skillet from heat and let cheese melt.</li>
                               <li>Top with sour cream and sprinkle with green onions. Serve immediately.</li>
                           </div>
+                          <div class="row">
+                            <div id="edit-meal" class="col-md-1">
+                              <button class="btn btn-default" data-toggle="modal" href="#edit-meal-list"> Edit meal </button>
+                            </div>
+                             <div class="modal fade" id="edit-meal-list">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                          <div class="row">
+                            <div class="col-md-11">
+                              <h2 id="recipe-name" >Replace the meal with one of the following below:</h2>
+                            </div>
+                            <div id="x-button" class="col-md-1">
+                              <button type="button" class="btn btn-default" data-dismiss="modal"> x </button>
+                            </div>
+                          </div>
+                          <row> 
+                            <table class="choose-meal" style="width: 100%">
+                              <tr>
+                                <th onclick="edit('Hot Dog')" data-dismiss="modal">Hot Dog</th>
+                                <th onclick="edit('Sausage Pizza')" data-dismiss="modal">Sausage Pizza</th>
+                                <th onclick="edit('Apple Pie')" data-dismiss="modal">Apple Pie</th>
+                              </tr>
+                              <tr>
+                                <th onclick="edit('Avocado Smoothie')" data-dismiss="modal">Avocado Smoothie</th>
+                                <th onclick="edit('Tropical Smoothie')" data-dismiss="modal">Tropical Smoothie</th>
+                                <th onclick="edit('Berry Smoothie')" data-dismiss="modal">Berry Smoothie</th>
+                              </tr>
+                              <th onclick="edit('Steak Salad')" data-dismiss="modal">Steak Salad</th>
+                              <th onclick="edit('Vegan Salad')" data-dismiss="modal">Vegan Salad</th>
+                              <th onclick="edit('Fruit Salad')" data-dismiss="modal">Fruit Salad</th>
+                            </table>
+                          </row>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                            <div class="col-md-8">
+                            </div>
+                            <div id="remove-meal" class="col-md-1">
+                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="remove()"> 
+                                Remove meal 
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                   </div>
@@ -177,8 +222,8 @@
         </td>
         <td>
           <div id="meal-wed" class="single-meal-container">
-            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg">
-            Classic Beef Stroganoff
+            <img class="meal-image" src="https://images-gmi-pmc.edge-generalmills.com/ba9c8f62-3f72-434f-8269-94c89b0e56db.jpg" data-toggle="modal" data-target="#mymodal2">
+            <div id="meal-wed-food"> Classic Beef Stroganoff</div>
           </div>
         </td>
         <td>
