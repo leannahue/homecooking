@@ -39,23 +39,17 @@
 		</div>
 		<div class="line-top">
 		</div>
-		<div class="row" id="search-bar">
-			<div class="col-md-1 search-icon">
-				<i class="material-icons ">search</i>
-			</div>
-			<div class="col-md-9">
-				<input type="text" spellcheck="true" id="ingredient-input" onkeyup="enterReturn(event)" placeholder="Add an ingredient">
-				<!-- <h3>Search for an ingredient</h3> -->
-			</div>
-			<div class="col-md-2">
-				<button class="add-ingredient" onclick="addsearchitem()">Add Ingredient</button>
-			</div>
-			<div class="search-line">
-			</div>
-		</div>
+
+
 		<div class="row">
+
 			<div class="col-md-8 select-ingredients">
-				<h2>Select from categories:</h2>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Select by categories</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"> Select by search </button>
+        </div>
+        <div id="London" class="tabcontent">
+				<!-- <span class="select-text">Select from categories:</span> -->
 
         <button onclick="showVeg()" class="accordion">Vegetables</button>
         <div id="dropdown-veg" class="panel dropdown-content">
@@ -159,6 +153,26 @@
               <th onclick="additemfruits('Mangos')" class="right">Mangos</th>
             </tr>
           </table>
+        </div>
+      </div>
+
+
+      <div id="Paris" class="tabcontent">
+        <!-- <span class="select-text">Select by search:</span> -->
+      		<div class="row" id="search-bar">
+      			<div class="col-md-1 search-icon">
+      				<i class="material-icons ">search</i>
+      			</div>
+      			<div class="col-md-5">
+      				<input type="text" spellcheck="true" id="ingredient-input" onkeyup="enterReturn(event)" placeholder="Add an ingredient">
+      				<!-- <h3>Search for an ingredient</h3> -->
+      			</div>
+      			<div class="col-md-2">
+      				<button class="add-ingredient" onclick="addsearchitem()">Add Ingredient</button>
+      			</div>
+      			<div class="search-line">
+      			</div>
+      		</div>
         </div>
         <!-- <div class="panel">
           <input onchange="additemveg" type="checkbox" class="droplistveg" value="Lettuce"> Lettuce
@@ -276,7 +290,7 @@
 				</div> -->
 			</div>
 			<div class="col-md-4 selected-ingredients">
-				<h2>Selected Ingredients:</h2>
+				<span class="selected-text">Selected Ingredients: </span>
 			</div>
 			<div class="col-md-4">
 				<div id="ingredientlist"> </div>
