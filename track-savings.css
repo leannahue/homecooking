@@ -139,7 +139,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important; text-decoration: none;}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
@@ -185,6 +185,7 @@ body {
 
 .line-divider {
 	border: 1px solid #2a3484;
+	border-color: #3b8c88;
 	margin-bottom: 1%;
 	width: 32%;
 	margin-left: 34.25%;
@@ -255,7 +256,8 @@ body {
 	font-weight: bold;
 	font-size: 175%;
 	padding-bottom: 4%;
-	border-bottom:2px solid #0dbab1;
+	border-bottom:2px solid #3b8c88;
+;
 }
 #boxy {
 	display: flex;
@@ -578,7 +580,7 @@ input[type=submit]:hover {
 
  .stats-box{
  	/*border:1px solid black;*/
- 	border-left: 2px solid #0dbab1;
+ 	border-left: 2px solid #3b8c88;
  	padding-top:1%;
  }
 
