@@ -518,9 +518,12 @@ input[type=submit]:hover {
  	margin-left: 45%;
  }
 
+.stats-info{
+	padding-right:5%;
+}
+
  .stats-box{
- 	border:1px solid black;
- 	margin-left:30%;
- 	margin-right:30%;
+ 	/*border:1px solid black;*/
+ 	border-left: 2px solid #0dbab1;
  	padding-top:1%;
  }
